@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "user_id": "39zN8LKq4Zc_ZABm5t8CY",
+      "full_name": "Admin User",
+      "email": "admin@example.com",
+      "phone": null,
+      "password_hash": "$2a$10$Q9hL9lSEK6iKFx04y6n.g.KnCz9uPWLD4/uC/gVjKBBmhspWk4Vpy",
+      "role": "admin",
+      "created_at": "2025-10-01T16:13:49.196Z"
+    },
+    {
+      "user_id": "2L0dJUOi0ZbbsVf50ksnj",
+      "full_name": "Demo User",
+      "email": "user@example.com",
+      "phone": "0900000000",
+      "password_hash": "$2a$10$pcZ/S3J6v/h9JxkBJ1fvL.ZmEIUskDL6LwASAAieAmbYvh62yJ5rK",
+      "role": "user",
+      "created_at": "2025-10-01T16:13:49.255Z"
+    }
+  ],
+  "hotels": [
+    {
+      "hotel_id": "5w1K7KuGkPLFD3JWzmSzn",
+      "name": "Sunrise Hotel",
+      "address": "123 Beach Road",
+      "city": "Phuket",
+      "country": "Thailand",
+      "phone": "076-123456",
+      "email": "info@sunrise.example.com",
+      "created_at": "2025-10-01T16:13:49.255Z"
+    }
+  ],
+  "rooms": [
+    {
+      "room_id": "1quEPHUWSEs3OBuMKO98U",
+      "hotel_id": "5w1K7KuGkPLFD3JWzmSzn",
+      "room_type": "Deluxe",
+      "price_per_night": 1500,
+      "max_guests": 2,
+      "description": "Sea view deluxe room",
+      "created_at": "2025-10-01T16:13:49.255Z"
+    },
+    {
+      "room_id": "XVNA0dwXNIPxTLCAI6Q_x",
+      "hotel_id": "5w1K7KuGkPLFD3JWzmSzn",
+      "room_type": "Suite",
+      "price_per_night": 2800,
+      "max_guests": 3,
+      "description": "Large suite with living area",
+      "created_at": "2025-10-01T16:13:49.255Z"
+    }
+  ],
+  "room_availability": [
+    {
+      "room_id": "1quEPHUWSEs3OBuMKO98U",
+      "date": "2025-10-01",
+      "is_available": true,
+      "price_override": 1600,
+      "created_at": "2025-10-01T16:13:49.255Z"
+    },
+    {
+      "room_id": "1quEPHUWSEs3OBuMKO98U",
+      "date": "2025-10-02",
+      "is_available": false,
+      "created_at": "2025-10-01T16:13:49.255Z"
+    },
+    {
+      "room_id": "XVNA0dwXNIPxTLCAI6Q_x",
+      "date": "2025-10-01",
+      "is_available": true,
+      "created_at": "2025-10-01T16:13:49.255Z"
+    },
+    {
+      "room_id": "XVNA0dwXNIPxTLCAI6Q_x",
+      "date": "2025-10-02",
+      "is_available": true,
+      "price_override": 2900,
+      "created_at": "2025-10-01T16:13:49.255Z"
+    }
+  ],
+  "bookings": [],
+  "payments": []
+}

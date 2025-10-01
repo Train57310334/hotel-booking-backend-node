@@ -1,0 +1,63 @@
+{
+  "info": {
+    "name": "Hotel Booking API",
+    "_postman_id": "e1c3c0b5-0000-0000-0000-000000000000",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/auth/register",
+          "host": [
+            "http://localhost:3000"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "register"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"full_name\": \"Aye\", \"email\": \"aye@example.com\", \"password\": \"secret123\"}"
+        }
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/auth/login",
+          "host": [
+            "http://localhost:3000"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\": \"admin@example.com\", \"password\": \"admin123\"}"
+        }
+      }
+    }
+  ]
+}
